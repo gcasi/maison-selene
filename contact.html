@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contactez Maison Sélène pour préparer votre visite, choisir un soin ou demander une carte cadeau.">
+  <meta name="theme-color" content="#f7f5ef">
+  <title>Nous contacter — Maison Sélène</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Maison Sélène, accueil">Maison <span>Sélène</span><i>SPA & BIEN-ÊTRE</i></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu"><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a><a href="spa.html">La maison</a><a href="soins.html">Les soins</a><a href="tarifs.html">Les tarifs</a><a class="nav-cta active" href="contact.html">Nous contacter <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero page-hero-contact"><div><p class="eyebrow light">ON PREND LE TEMPS</p><h1>Parlons de<br>votre pause.</h1></div><span class="hero-note">NOUS CONTACTER</span></section>
+    <section class="section-wrap contact-layout">
+      <div class="contact-copy"><p class="eyebrow">ÉCRIVEZ-NOUS</p><h2>Votre parenthèse<br><em>commence ici.</em></h2><p>Une question, une envie de soin ou une carte cadeau à préparer ? Laissez-nous un message, nous serons ravis de vous répondre.</p><div class="contact-note"><span class="moon-mark" aria-hidden="true">☾</span><p>Les coordonnées et horaires de Maison Sélène sont à compléter ici.</p></div></div>
+      <form class="contact-form" action="mailto:" method="post" enctype="text/plain">
+        <label for="name">Votre nom</label><input id="name" name="Nom" autocomplete="name" required>
+        <label for="email">Votre adresse e-mail</label><input id="email" name="E-mail" type="email" autocomplete="email" required>
+        <label for="subject">Le sujet de votre message</label><select id="subject" name="Sujet"><option>Prendre rendez-vous</option><option>Choisir un soin</option><option>Carte cadeau</option><option>Autre demande</option></select>
+        <label for="message">Votre message</label><textarea id="message" name="Message" rows="4" required></textarea>
+        <button class="button button-dark" type="submit">Préparer mon message <span aria-hidden="true">→</span></button>
+        <p class="form-note">Le formulaire ouvrira votre application de messagerie. Configurez l’adresse e-mail de réception avant la mise en ligne.</p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="wordmark footer-mark" href="index.html">Maison <span>Sélène</span><i>SPA & BIEN-ÊTRE</i></a><p>Un lieu pour ralentir, respirer, se retrouver.</p><div class="footer-bottom"><span>© <span data-year></span> Maison Sélène</span><span>Un instant rien qu’à vous.</span><a href="contact.html">Nous contacter ↗</a></div></footer>
+</body>
+</html>
